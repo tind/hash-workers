@@ -4,8 +4,12 @@
   "description": "Provides hash-wasm as workers",
   "main": "src/index.ts",
   "scripts": {
+    "build": "NODE_ENV=development webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tind/hash-workers.git"
@@ -17,7 +21,12 @@
   },
   "homepage": "https://github.com/tind/hash-workers#readme",
   "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "hash-wasm": "^4.11.0"
   }
 }
