@@ -1,0 +1,6 @@
+/node_modules
+
+.devcontainer/*
+!.devcontainer/devcontainer.json
+!.devcontainer/Dockerfile
+!.devcontainer/initialize

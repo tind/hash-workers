@@ -1,0 +1,21 @@
+{
+    "initializeCommand": "/usr/bin/env bash .devcontainer/initialize",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "options": [
+            // Build for arm64 by starting vscode with
+            // PLATFORM=linux/arm64 code .
+            "--platform=${localEnv:PLATFORM:linux/amd64}"
+        ]
+    },
+    "runArgs": [
+        "--platform=${localEnv:PLATFORM:linux/amd64}"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot"
+            ]
+        }
+    }
+}
