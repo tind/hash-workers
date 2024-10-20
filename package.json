@@ -1,6 +1,6 @@
 {
   "name": "@tindtechnologies/hash-workers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides hash-wasm as workers",
   "main": "src/index.ts",
   "scripts": {
