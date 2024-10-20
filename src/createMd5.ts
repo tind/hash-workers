@@ -1,4 +1,4 @@
-import { createMD5 } from "hash-wasm";
+import { createMD5 } from "hash-wasm/dist/md5.umd.min.js";
 import type { IDataType } from "hash-wasm/dist/lib/util";
 import type { IHasher } from "hash-wasm/dist/lib/WASMInterface";
 

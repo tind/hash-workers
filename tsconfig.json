@@ -1,1 +1,6 @@
-{}
+{
+    "include": [
+        "src",
+        "types/hash-wasm.d.ts"
+    ]
+}
