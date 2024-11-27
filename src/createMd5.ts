@@ -4,6 +4,7 @@ import type { IHasher } from "hash-wasm/dist/lib/WASMInterface";
 
 type HashingMessageType =
     | "READY"
+    | "CONTINUE"
     | "UPDATE"
     | "DIGEST"
     | "DIGEST_RESULT"
@@ -53,6 +54,10 @@ const createOnMessageHandler = () => {
     
             try {
                 md5.update(data.data);
+
+                postHashingMessage({
+                    type: "CONTINUE",
+                });
             } catch (error) {
                 postHashingMessage({
                     type: "ERROR",
